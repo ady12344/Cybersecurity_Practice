@@ -1,0 +1,4 @@
+Comanda introdusă pentru a crea o cheie SSH folosind RSA este:
+  ssh-keygen -t rsa -f pb1_key
+-t reprezintă tipul de cheie generată (-t rsa).
+-f specifică fișierul unde este salvată cheia (-f pb1_key, adică cheia este salvată în pb1_key), iar automat este generată și cheia publică, adică pb1_key.pub.

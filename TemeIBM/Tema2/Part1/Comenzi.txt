@@ -1,0 +1,7 @@
+openssl genpkey -algorithm RSA -out domeniu.key -pkeyopt rsa_keygen_bits:2048  ////[Generarea unei chei private folosind RSA pe 2048 biti, pe care o salveaza in fisierul domeniu.key ]
+
+openssl req -new -key domeniu.key -out domeniu.csr -sha512 -subj "/C=RO/ST=Romania/L=Bucuresti/O=Firma/OU=IT/CN=practica-ibm.ro" ////// [Generarea unui CSR (Certificate Signing Request) utilizand cheia privata generata si folosind algoritmul SHA512, pe langa asta am folosit -subj care ne permite sa introducem direct datele despre subiectul certificatului]
+
+openssl x509 -req -in domeniu.csr -signkey domeniu.key -out certificat.crt -days 365 -sha512  /////[Generarea unui certificat self-signed (auto-semnat) folosind CSR-ul generat anterior și cheia privată. Certificatul este semnat cu algoritmul SHA512 (implicit este SHA1) și este valabil 365 de zile.]
+
+openssl s_client -connect google.com:443 -showcerts //// [Stabilește o conexiune TLS/SSL către serverul google.com pe portul 443 și afișează lanțul de certificate (certificate chain) pe care serverul îl trimite.]

@@ -1,0 +1,21 @@
+1. Criptare cu ecb pe 192 biti
+Comenzi:
+openssl rand -out enc_key.bin 24
+(Generează o cheie random de 24 bytes (192 biți), folosită pentru criptarea fișierului).
+
+openssl enc -aes-192-ecb -salt -in hashing.txt -out crypted1.dat -pass file:enc_key.bin
+(Folosim criptarea AES-192 în modul ECB. ECB nu folosește IV, deci nu se poate atașa un vector IV. Opțiunea -salt este folosită pentru a adăuga un sir de bytes aleatori la derivarea cheii din parola conținută în enc_key.bin. Fișierul hashing.txt este criptat și rezultatul este salvat în crypted1.dat).
+
+openssl enc -d -aes-192-ecb -in crypted1.dat -out decrypted.txt -pass file:enc_key.bin
+(Decriptăm fișierul folosind cheia generată anterior, enc -d indică modul de decriptare).
+
+2.Criptate cu cfb pe 128  biti
+Comenzi:
+openssl rand -hex 16 > iv.hex
+(Generăm un vector IV de 16 bytes (128 biți) în format hex, deoarece acest format este acceptat de OpenSSL pentru parametrul -iv).
+
+openssl enc -aes-128-cfb -in hashing.txt -out hashing_cfb.enc -pass file:enc_key.bin -iv $(cat iv.hex) -salt
+(Criptăm fișierul hashing.txt folosind AES-128 în modul CFB, cu cheia din enc_key.bin și IV-ul citit din fișierul iv.hex. Opțiunea -nosalt este folosită deoarece furnizăm manual atât cheia, cât și IV-ul, evitând derivarea automată care implică sărare).
+
+openssl enc -d -aes-128-cfb -in hashing_cfb.enc -out decrypted2.txt -pass file:enc_key.bin -iv $(cat iv.hex) -salt
+(Decriptăm fișierul hashing_cfb.enc folosind aceeași cheie și același IV pentru a recupera conținutul original).

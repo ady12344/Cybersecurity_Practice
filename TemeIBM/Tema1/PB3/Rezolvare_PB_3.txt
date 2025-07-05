@@ -1,0 +1,11 @@
+1. Caesar Cipher shift = -3 because of this clue "The shift number = the number of times you usually count until running in a competition." so it is 3 2 1 Go. So basically it's counting from -3 to 0
+Caesar Cipher command = openssl enc -aes-256-cbc -d -salt -in confession.enc -out confession.mp4 -k Put_PWD_HERE
+
+2. 767ae4575f235465c0318145d85cd947  total length = 32 hexadecimal string
+    Based on it's length it's hashed with md5 algorithm
+
+3. After testing some keywords from the Leinad's background the identical match for for this hash 767ae4575f235465c0318145d85cd947 is Canon this resulted after using this command echo -n "Canon" | md5sum
+4. The word that has the identical hash is "Canon"
+
+5. The final command looks like this openssl enc -aes-256-cbc -d -salt -in confession.enc -out confession.mp4 -k Canon
+
