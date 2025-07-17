@@ -1,0 +1,5 @@
+So basically the 2FA concept works like this:
+ 1 - The user wants to log into his account and after he enters the password correctly he will be prompted with an input needing a code from the 2FA app.
+ 2 - The app generates a code that has a time limit for example 30 seconds, after the 30 seconds the code will change.
+ 3 - The user will enter the code from the app and after he presses submit the server will check if the code entered it's the same that the app generated and if not the user will not be authenticated.
+ 4 - If the user entered a code that expired then he will be prompted to enter a valid code, then after he enters a code that is valid and in the time limit then he will be authenticated into his account.

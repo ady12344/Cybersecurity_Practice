@@ -1,0 +1,121 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0" version="28.0.5">
+  <diagram name="Page-1" id="i9YWs6D9cz_B5vM8ZhrE">
+    <mxGraphModel dx="659" dy="352" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-1" value="Login" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="380" y="30" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-2" target="Jeeab9DhkKL_UBHTrKcm-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-2" value="Enter Password" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-3" value="Check if password is correct" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="358" y="260" width="135" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-4" value="2FA CODE Needed" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="366" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-6" value="User input (2FA code)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-7" target="Jeeab9DhkKL_UBHTrKcm-27" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-7" value="Check if 2FA code matches the user input" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="353" y="620" width="145" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-1" target="Jeeab9DhkKL_UBHTrKcm-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="180" as="sourcePoint" />
+            <mxPoint x="480" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-3" target="Jeeab9DhkKL_UBHTrKcm-2" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="340" as="sourcePoint" />
+            <mxPoint x="540" y="180" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="540" y="300" />
+              <mxPoint x="540" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-12" value="False" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="475" y="268" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-3" target="Jeeab9DhkKL_UBHTrKcm-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="340" as="sourcePoint" />
+            <mxPoint x="480" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-14" value="True" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="425" y="330" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-4" target="Jeeab9DhkKL_UBHTrKcm-6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="510" as="sourcePoint" />
+            <mxPoint x="480" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-6" target="Jeeab9DhkKL_UBHTrKcm-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="590" as="sourcePoint" />
+            <mxPoint x="480" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-7" target="Jeeab9DhkKL_UBHTrKcm-18" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="590" as="sourcePoint" />
+            <mxPoint x="670" y="660" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-18" value="ACCESS DENIED" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="600" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-22" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-18" target="Jeeab9DhkKL_UBHTrKcm-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="590" as="sourcePoint" />
+            <mxPoint x="660" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="660" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-23" value="False" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="485" y="628" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-24" value="Auth Successful" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="383" y="890" width="85" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-26" value="True" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="436" y="700" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-27" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="660" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="Jeeab9DhkKL_UBHTrKcm-27" target="Jeeab9DhkKL_UBHTrKcm-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-27" value="Check if code is still valid&lt;div&gt;(if it&#39;s still in the time limit)&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="348" y="750" width="155" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-29" value="False" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="485" y="758" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Jeeab9DhkKL_UBHTrKcm-31" value="True" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="425" y="830" width="50" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
